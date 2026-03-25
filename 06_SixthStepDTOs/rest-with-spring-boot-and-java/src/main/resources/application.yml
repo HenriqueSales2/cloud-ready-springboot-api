@@ -4,8 +4,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/rest_with_spring_boot_java?userTimezone=true&serverTimezone=UTC
-    username: root
-    password: Plastation19112007
+    username: seuursename #username que você usa no banco de dados
+    password: suasenha # senha que você criou quando instalou o banco de dados
   jpa:
     hibernate:
       ddl-auto: update # através desse comando o banco de dados sabe que precisa criar a tabela para a aplicação
@@ -15,3 +15,8 @@ spring:
     show_sql: false # ativar essa funcao somente para debugar
 
     open-in-view: false
+logging:
+  level:
+    root: WARN # (o comando root dentro desse contexto, serve para eu especificar quais logs eu quero ver dentro da aplicação)
+    #br.com.application: DEBUG (aqui eu consigo especificar que dentro desse pacote, eu consigo listar quais das quatro logs principais eu quero que apareça (DEBUG, INFO, WARN, ERROR))
+
